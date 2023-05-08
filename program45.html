@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <br /><br />
+    <a href="#" onmouseover="getGreen()" onmouseleave="getBlack()"
+      >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae
+      odit. Sequi, consectetur deleniti!</a
+    >
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis,
+      quisquam maiores pariatur <b>dignissimos</b> similique, <b>minus</b> harum
+      nam debitis ullam quibusdam distinctio <b>tenetur</b> qui
+      <b>laborum</b> incidunt? <b>Perferendis</b>
+      adipisci nostrum tempora?
+    </p>
+  </body>
+  <script>
+    const getGreen = () => {
+      ele = document.getElementsByTagName("b");
+      for (var i = 0; i < ele.length; i++) {
+        ele[i].style.color = "green";
+      }
+    };
+    const getBlack = () => {
+      ele = document.getElementsByTagName("b");
+      for (var i = 0; i < ele.length; i++) {
+        ele[i].style.color = "black";
+      }
+    };
+    // ele[0].style.color = "green";
+  </script>
+</html>
